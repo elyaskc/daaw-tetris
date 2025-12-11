@@ -1,0 +1,215 @@
+:root {
+    color-scheme: dark;
+}
+
+body {
+    margin: 0;
+    background: #0b1220;
+    color: #fff;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial;
+}
+
+.app {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: auto 220px;
+    gap: 24px;
+    align-items: start;
+}
+
+.title {
+    margin: 0 0 8px;
+    font-size: 22px;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.stat {
+    font-size: 14px;
+    opacity: .95;
+}
+
+.help p {
+    margin: 0;
+    font-size: 13px;
+    opacity: .9;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 24px);
+    grid-template-rows: repeat(20, 24px);
+    background: #111827;
+    padding: 6px;
+    border-radius: 12px;
+    gap: 2px;
+    border: 1px solid #0f172a;
+    justify-content: center;
+}
+
+.cell {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid #0f172a;
+}
+
+.next {
+    margin-top: 8px;
+}
+
+.next-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 18px);
+    grid-template-rows: repeat(4, 18px);
+    gap: 2px;
+    margin-top: 6px;
+    background: #0f1628;
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid #0f172a;
+}
+
+.next-cell {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #0f172a;
+}
+
+.banner {
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    width: max-content;
+}
+
+.banner.pause {
+    color: #fbbf24;
+}
+
+.banner.over {
+    color: #ef4444;
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+/*  esto es nuevo  */
+
+.next-piece-container {
+    margin: 20px 0;
+    text-align: center;
+}
+.mini-grid {
+    display: inline-block;
+    background: #000;
+    padding: 5px;
+    border: 1px solid #333;
+}
+.mini-row {
+    display: flex;
+}
+.mini-cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #222;
+}
+
+.login-screen, .lobby-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.login-form input, .login-form button {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.lobby-content {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.me {
+    color: yellow; 
+    font-weight: bold;
+}
+
+.blink {
+    animation: blinker 1s linear infinite;
+    margin-top: 30px;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+
+.ranking-container {
+    width: 100%;
+}
+
+.ranking-container h3 {
+    text-align: center;
+    color: #fbbf24;
+    margin-top: 0;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.ranking-table th, .ranking-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #334155;
+}
+
+.ranking-table th {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.ranking-table td {
+    font-size: 1rem;
+}
+
+.ranking-container p {
+    text-align: center;
+    font-style: italic;
+    opacity: 0.7;
+}
