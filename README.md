@@ -36,13 +36,13 @@ El sistema se divide en dos componentes principales que interactúan para ofrece
 * Maven
 
 ### Configuración del Backend
-1. Entrar en el directorio `Tetris_API`.
+1. Entrar en el directorio `Tetris_API/tetris`.
 2. Ejecutar el servidor:
    `mvn spring-boot:run`
 3. La API estará disponible en `http://localhost:8080`.
 
 ### Configuración del Frontend
-1. Entrar en el directorio `Tetris_GAME`.
+1. Entrar en el directorio `Tetris_GAME/tetris`.
 2. Instalar las dependencias necesarias:
    `npm install`
 3. Iniciar la aplicación en modo desarrollo:
